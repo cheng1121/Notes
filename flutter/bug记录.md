@@ -39,7 +39,7 @@ targeted OS version does not support use of thread local variables in _term_exit
 ```
 解决办法：xcode打开项目，点击左侧Runner -> 右侧General -> 点击下方的TARGETS中的Runner -> 找到Deployment info 中的Target 点击后再下拉菜单中选择 ios 9.3(flutter_ffmpeg支持的最低版本是9.3)
 
-- gradle下载报SSL peer shut down incorrectly
+### gradle下载报SSL peer shut down incorrectly
 *2020年12月11日21:54:55*
 android目录中的gradle.properties中添加如下代理:
 ```
