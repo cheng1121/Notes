@@ -6,7 +6,7 @@ flutter中UI控件就是widget，主要分为两种:
 
 ## StatelessWidget的使用
 使用方式很简单，直接继承StatelessWidget，然后实现build方法就可以
-```
+```dart
 class MyWidget extends StatelessWidget{
     @override
     Widget build(BuildContext context){
@@ -19,7 +19,7 @@ class MyWidget extends StatelessWidget{
 1. 继承StatefulWidget，并实现createState方法
 2. 继承State<Widget>，并实现build方法
 3. createState方法中调用state类
-```
+```dart
 //继承StatefulWidget
 class MyWidget extends StatefulWidget{
   @override

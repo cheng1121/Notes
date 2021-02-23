@@ -125,3 +125,19 @@ Don't communicate by sharing memory, share memory by communicating.
 
 [点击此处查看原文和其他配置](https://www.lagou.com/lgeduarticle/115939.html)
 
+
+
+### 目前使用go module进行依赖管理工具
+
+#### 新项目使用go module
+
+- 执行`go mod init 项目名`命令，在项目文件夹下创建一个go.mod文件
+
+- 手动编辑go.mod中的require依赖项或执行 `go get` 自动发现、维护依赖
+
+  
+
+#### 已有项目
+
+- 在项目目录项执行`go mod init`，生成一个`go.mod` 文件
+- 执行`go get`，查找并记录当前项目的依赖，同时生成一个go.sum记录每个依赖库的版本和哈希值
