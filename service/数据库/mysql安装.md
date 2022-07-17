@@ -221,9 +221,29 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTI
 FLUSH PRIVILEGES;
 ```
 
-## 8. 本地客户端连接服务器mysql
 
-navicat 连接服务器
 
-连接 -> 输入连接名 -> 主机ip -> 主机端口号 --> 用户名 --> 密码 --> 保存密码 -> 测试连接 --> 保存
+## 8. 创建一般用户
+
+登录mysql后进入mysql库,创建新用户
+
+```sql
+# 创建新用户
+mysql> create user 'username'@'%' identified by 'userpassword'; 
+#给普通用户远程连接的权限：
+ #2、授权 myuser 用户对指定库的所有表，所有权限并设置远程访问
+mysql> GRANT ALL ON 指定库.* TO 'username'@'%'; 
+ #3、更新 该 用户密码 
+mysql> ALTER USER 'username'@'%' IDENTIFIED WITH mysql_native_password BY 'userpassword';
+ #4.刷新权限 
+mysql> FLUSH PRIVILEGES;
+```
+
+## 9. 删除用户
+
+```sql
+mysql> drop user 'username'@'%';
+```
+
+
 

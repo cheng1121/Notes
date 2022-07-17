@@ -8,7 +8,7 @@ github地址：[scrcpy](https://github.com/Genymobile/scrcpy)
 
 [中文文档](https://github.com/Genymobile/scrcpy/blob/master/README.zh-Hans.md)
 
-
+ 
 
 必要条件：
 

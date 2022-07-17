@@ -70,13 +70,25 @@
 
 
 
-
-
-
-
 ### TFS窗口更新本地修改的文件列表
 
 1. 在idea编辑窗口的下方，有个TFS选项卡点击后会展示TFS窗口
 
 2. 在TFS窗口中有个Local Changes 选项卡
 3. Local Changes选项卡右侧有个刷新按钮，点击后刷新列表
+
+
+
+
+
+## TFVC命令行
+
+1. 修改工作区创建位置:
+
+   进入指定本地工作区目录
+
+   ```shell
+   tf workspace -location:server
+   ```
+
+   
